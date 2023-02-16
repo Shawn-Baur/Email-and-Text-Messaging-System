@@ -52,13 +52,13 @@ sheet = wb.active
 sheet2 = wb2.active
 
 
-Twilio_Number="+18334530361", #this is your own Twilio number
-account_sid = 'AC6724de2023a64430a8243b68872d5cd5'  #this is your account SID
-auth_token = 'a680ecb6023cf209bb8ee6390ca5abe7'     #this is your own auth_token
+Twilio_Number="[Number Provided by Twilio]", #this is your own Twilio number
+account_sid = '[SID]'  #this is your account SID
+auth_token = '[Token]'     #this is your own auth_token
 
 
-from_address = "covidalertemail@gmail.com" #this is your own gmail account
-app_password = 'xhjvfvyqugcmblhb' # a token for gmail, this is the app password from Gmail Security
+from_address = "[Email to send from]" #this is your own gmail account
+app_password = '[Password set on Email account]' # a token for gmail, this is the app password from Gmail Security
 
 
 # Excel sheet layour for registration form
