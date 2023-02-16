@@ -1,0 +1,66 @@
+Overview:
+This program uses twilio and yagagmail to alert an individual who has input their personal information,
+sending them a text message allert as well as an email alert. These alerts would be in ocordance with their 
+date of vacination and the date they will be reqired to return for a second vaccination.
+
+Important Sections for Development:
+	- Account Information 			(line 52-57)
+		- Location where personal information for twilio and yagamail can be found
+
+	- Excell Sheet titles 			(line 63-94)
+		- The title names location for the excell sheet
+
+	- Focuses 					(line 98-140)
+		- Location of elements required to be changed to add more catagories
+
+	- Clear Information 			(line 144-157)
+		- Location where all information on the personal information sheet
+
+	- Insert Values to Excel 		(line 523-533)
+		- Takes the values from the input boxes and sends it to excel
+
+	- GUI labels 				(line 619-689)
+		- Labels for the GUI text boxes
+
+	- GUI layout 				(line 691-703)
+		- Grid format GUI layed out here
+
+	- GUI text box 				(line 751-761)
+		- Text boxes for user inputs on the personal information page
+
+	- First vaccine alert 			(line 265-333)
+		- Code that sends first email and text
+
+	- Second vaccine alert 			(line 340-425)
+		- Code that sends second email and text
+
+
+2/15/2023
+
+Modifications:
+	Personal to user messaging
+	- Requre to be changed based on the developers twilio account and yagagamil
+		- Twilio_Number 			(line 52)
+		- account_sid 			(line 53)
+		- auth_token 			(line 54)
+		- from_address 			(line 56)
+		- app_password 			(line 57)
+
+	Images
+	- Backgrounds changed for each of the following
+		- Main Page 			(line 573)
+		- Register Page 			(line 788)
+		- Login Page 			(line 852)
+		- Personal Info Page 		(line 1120)
+
+	More catagories (Gender, Pergered Arm, Egg Allergy)
+	- Added focus event			(line 102:)
+	- clear item				(line 148:)
+	- global variable				(line 584:)
+	- text					(line 623:)
+	- text box					(line 755:)
+	- excel element 				(line 524:)
+
+Bugs:
+- twilio is filtering my messages as spam
+- second notification not sending (TypeError: strptime() (line 377)

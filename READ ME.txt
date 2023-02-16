@@ -1,0 +1,51 @@
+Name: Shawn Baur
+Class: EE 104
+
+Reference: https://www.twilio.com/docs/sms/quickstart/python
+
+About this code:
+
+# Module 1 TEXT VERIFICATION
+You will need to set up a twilio account and then input the number provided by them into the from location. 
+Then verify a phone number to recive texts to and then you can use the code to send from the provided number
+to the verified one. Once you have changed the numbers change the SID and the Token to accordance with your
+account. Once this has been completed messages should be able to be sent to any verified number.
+
+# Module 2 YAGAGMAIL VERIFICATION
+Set up a gmail account to send emails from. After it has been created you will need to change security settings
+to allow 2-step verification. Then change the App passwords, it shows up under the 2-step verification button,
+select other(custom name) and input Python copying the code that it provides you. In the code change the user
+to the email you want to send from, provide the app_password you coppied, and add a recipiant. You can then
+write anything you desire in the subject and content lines and they will appear as such on the email.
+
+# Module 3 GUI LOGIN REGISTRATION
+This GUI creates a library of uses by using the register button. This group of usernames and passwords is then
+used to login and then allows the user to input all the values that are requested. All the COVID information is
+then saved to a database labeled "Simple_Registration_Database". After a user has input their information they
+will recive 2 emails. The first of which provides the date of their first shot, ie current date, and provides an
+update when the follow up will be. The seccond email is a reminder to attend the seccond shot.
+
+***MAKE SURE THAT THE FOLLOWING PYTHON MODULES ARE INSTALLED***
+
+from tkinter import *
+from openpyxl import *
+from datetime import date, datetime, timedelta (pip install datetime)
+import pandas as pd (pip install pandas)
+import os
+import smtplib, ssl
+from twilio.rest import Client (pip install twilio)
+
+Instructions: 
+- Check that the aforementioned modules are installed
+- Use programs
+- Log in or register
+- Click OK to finish. Close the login window in the pop-up window
+- Sign up or enter information
+- The phone number must have 10 digits and not include any dashes or parentheses.
+- Enter email addresses using the standard format
+- Enter the date using the dash-delimited format (YYYY-MM-DD).
+- Proffesor toll to check a date will appear when you hit "submit." For reference, the first vaccine's original 
+	date of administration and the second vaccine's date are displayed to the left in the black box with red lettering.
+- Enter a date three days before the second vaccination date using the same format (YYYY-MM DD), then click OK to 
+	end the date check window.
+- Form has been cleared and is prepared for a new registration.
